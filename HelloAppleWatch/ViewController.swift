@@ -37,13 +37,13 @@ class ViewController: UIViewController {
   }
   
   func showFortune() {
-    let peopleIndex = emoji.people.count.random()
-    let natureIndex = emoji.nature.count.random()
-    let objectsIndex = emoji.objects.count.random()
-    let placesIndex = emoji.places.count.random()
-    let symbolsIndex = emoji.symbols.count.random()
+    let firstIndex = emoji.first.count.random()
+    let secondIndex = emoji.second.count.random()
+    let thirdIndex = emoji.third.count.random()
+    let fourthIndex = emoji.fourth.count.random()
+    let fifthIndex = emoji.fifth.count.random()
     
-    emojiFortuneLabel.text = "\(emoji.people[peopleIndex])\(emoji.nature[natureIndex])\(emoji.objects[objectsIndex])\(emoji.places[placesIndex])\(emoji.symbols[symbolsIndex])"
+    emojiFortuneLabel.text = "\(emoji.first[firstIndex])\(emoji.second[secondIndex])\(emoji.third[thirdIndex])\(emoji.fourth[fourthIndex])\(emoji.fifth[fifthIndex])"
   }
   
   @IBAction func newFortune(sender: AnyObject) {

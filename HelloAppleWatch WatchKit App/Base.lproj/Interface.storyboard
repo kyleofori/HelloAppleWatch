@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Cookie-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="Cookie" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloAppleWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.90000000000000002" alignment="center" verticalAlignment="bottom" title="Button" id="uPG-q3-p2V">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                            <connections>
+                                <action selector="newFortune" destination="AgC-eL-Hgc" id="MSg-bh-R47"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="uPG-q3-p2V" id="3yT-PN-ZDJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="248" y="344"/>
+        </scene>
+    </scenes>
+</document>
